@@ -1,0 +1,60 @@
+{
+  "name": "dsh-hematology-expert",
+  "version": "1.0.0",
+  "private": false,
+  "description": "血液病学专家顾问：读血常规、涂片、骨髓、流式、免疫组化与分子报告，按 WHO5/ICC2022 与 2026 CSCO 指南给分型、鉴别、分层与方案骨架。技能随包分发，桌面端与 DSH-GO 手机端通用。Hematology consultant plugin for DeepSeek Harness: report reading, WHO5/ICC2022 typing, differential, risk stratification and guideline-anchored treatment skeletons.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flying-ovaltine/dsh-hematology-expert.git"
+  },
+  "homepage": "https://github.com/flying-ovaltine/dsh-hematology-expert#readme",
+  "bugs": {
+    "url": "https://github.com/flying-ovaltine/dsh-hematology-expert/issues"
+  },
+  "files": [
+    "lib",
+    "src",
+    "resources",
+    "test",
+    "assets",
+    "icon.png",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/smoke.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh-go",
+    "hematology",
+    "lymphoma",
+    "leukemia",
+    "myeloma",
+    "血液病学",
+    "报告判读"
+  ],
+  "author": "杨杨",
+  "license": "MIT",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.3"
+  }
+}

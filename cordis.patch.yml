@@ -1,0 +1,14 @@
+# 血液病学专家（DeepSeek Harness 插件）
+#
+# 安装后得到：
+#   技能 hematology-expert：读血常规/涂片/骨髓/流式/组化/分子报告，
+#   按 WHO5/ICC2022 与 2026 CSCO 指南给分型、鉴别（带反证）、危险分层与方案骨架；
+#   急症红线（疑 APL/TTP 等）先处理不等确诊；不做最终诊断、不开处方。
+#
+# 纯 Host 技能注册，无 Web 面板依赖 —— 桌面端与 DSH-GO 手机端共用同一套引擎，均可调用。
+# 自带空配置，绝不弄崩启动。
+#
+- insert:
+    - id: hematology-expert-workbench
+      name: dsh-hematology-expert
+      config: {}
